@@ -12,3 +12,8 @@ a.out
 cache
 *.g2o
 
+
+# pixi and build output
+.pixi/
+output/
+*.so

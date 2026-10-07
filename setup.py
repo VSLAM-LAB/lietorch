@@ -20,12 +20,8 @@ setup(
                 'lietorch/src/lietorch_cpu.cpp'],
             extra_compile_args={
                 'cxx': ['-O2'],
-                'nvcc': ['-O2',
-                    '-gencode=arch=compute_80,code=sm_80',
-                    '-gencode=arch=compute_86,code=sm_86',
-                    '-gencode=arch=compute_90,code=sm_90',
-                    '-gencode=arch=compute_90,code=compute_90',
-                ]
+                # GPU targets come from TORCH_CUDA_ARCH_LIST (defaults to the build machine's GPU)
+                'nvcc': ['-O2']
             }),
 
         CUDAExtension('lietorch_extras',
@@ -39,12 +35,8 @@ setup(
             ],
             extra_compile_args={
                 'cxx': ['-O2'],
-                'nvcc': ['-O2',
-                    '-gencode=arch=compute_80,code=sm_80',
-                    '-gencode=arch=compute_86,code=sm_86',
-                    '-gencode=arch=compute_90,code=sm_90',
-                    '-gencode=arch=compute_90,code=compute_90',
-                ]
+                # GPU targets come from TORCH_CUDA_ARCH_LIST (defaults to the build machine's GPU)
+                'nvcc': ['-O2']
             }),
     ],
     cmdclass={ 'build_ext': BuildExtension }
