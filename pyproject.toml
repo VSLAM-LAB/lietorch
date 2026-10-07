@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=77", "torch"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lietorch"
+version = "1.0.1"
+description = "The LieTorch library generalizes PyTorch to 3D transformation groups."
+readme = "README.md"
+license = "BSD-3-Clause"
+license-files = ["LICENSE"]
+authors = [{ name = "Zachary Teed" }, { name = "Jia Deng" }]
+requires-python = ">=3.9"
+
+[project.urls]
+Homepage = "https://github.com/princeton-vl/lietorch"
+Repository = "https://github.com/VSLAM-LAB/lietorch"

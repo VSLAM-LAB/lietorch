@@ -6,11 +6,8 @@ import os.path as osp
 
 ROOT = osp.dirname(osp.abspath(__file__))
 
+# Package metadata lives in pyproject.toml; setup.py only declares the CUDA extensions.
 setup(
-    name='lietorch',
-    version='0.2',
-    description='Lie Groups for PyTorch',
-    author='teedrz',
     packages=['lietorch'],
     ext_modules=[
         CUDAExtension('lietorch_backends',
