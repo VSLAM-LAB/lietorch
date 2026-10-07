@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lietorch"
-version = "1.0.1"
+version = "1.0.2"
 description = "The LieTorch library generalizes PyTorch to 3D transformation groups."
 readme = "README.md"
 license = "BSD-3-Clause"

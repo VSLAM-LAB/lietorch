@@ -23,7 +23,7 @@ python = ["3.11.*"]
 #   pixi upload prefix --channel vslamlab/vslamlab output/*.conda
 [package]
 name = "lietorch"
-version = "1.0.1"
+version = "1.0.2"
 description = "The LieTorch library generalizes PyTorch to 3D transformation groups."
 authors = ["Zachary Teed", "Jia Deng"]
 license = "BSD-3-Clause"
